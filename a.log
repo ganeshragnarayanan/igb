@@ -46,6 +46,13 @@
             "vlan_mode": "access",
             "vlan_tag": "DEFAULT_VLAN_1"
         },
+        "1%2F1%2F10": {
+            "interfaces": [
+                "1%2F1%2F10"
+            ],
+            "ip4_address": "100.0.0.2/24",
+            "name": "1/1/10"
+        },
         "1%2F1%2F2": {
             "interfaces": [
                 "1%2F1%2F2"
@@ -744,6 +751,7 @@
                 "name": "vrf_default",
                 "ports": [
                     "1%2F1%2F2",
+                    "1%2F1%2F10",
                     "vlan2"
                 ],
                 "type": "user"
