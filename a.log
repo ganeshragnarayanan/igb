@@ -38,6 +38,14 @@
         }
     },
     "Port": {
+        "1%2F1%2F1": {
+            "interfaces": [
+                "1%2F1%2F1"
+            ],
+            "name": "1/1/1",
+            "vlan_mode": "access",
+            "vlan_tag": "DEFAULT_VLAN_1"
+        },
         "bridge_normal": {
             "interfaces": [
                 "bridge_normal"
@@ -254,6 +262,7 @@
                 "name": "bridge_normal",
                 "ports": [
                     "bridge_normal",
+                    "1%2F1%2F1",
                     "vlan2"
                 ],
                 "stp_config": {
@@ -708,6 +717,7 @@
                     }
                 },
                 "name": "base",
+                "part_number_cfg": "OPSX8664",
                 "type": "system"
             }
         },
