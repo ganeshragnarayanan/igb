@@ -726,7 +726,7 @@
     "sFlow": {
         "global": {
             "name": "global",
-            "sampling": 10
+            "sampling": 750
         }
     }
 }
