@@ -6,24 +6,24 @@ import (
 )
 
 func main() {
-    statusText, err := exec.Command("git", "status", "-s").Output()
+    statusText, err := exec.Command("git", "--git-dir", "/ws/naragane/golang1/igb/.git/", "status", "-s").Output()
 	if err != nil {
 	     fmt.Println("hello world1")
 		
 	}
 	if len(statusText) > 0 {
-		_, err = exec.Command("git", "add", ".").Output()
+		_, err = exec.Command("git", "--git-dir", "/ws/naragane/golang1/igb/.git/", "add", "a.log").Output()
 		if err != nil {
 		   fmt.Println("hello world2")
 		}
 
 		commitMsg := "Sweet commit:\n" + string(statusText)
-		_, err = exec.Command("git", "commit", "-a", "-m", commitMsg).Output()
+		_, err = exec.Command("git", "--git-dir", "/ws/naragane/golang1/igb/.git/", "commit", "-a", "-m", commitMsg).Output()
 		if err != nil {
 			fmt.Println("hello world3")
 		}
 
-		_, err = exec.Command("git", "push").Output()
+		_, err = exec.Command("git", "--git-dir", "/ws/naragane/golang1/igb/.git/", "push").Output()
 		if err != nil {
 		    fmt.Println("hello world4")
 			
