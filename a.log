@@ -696,6 +696,7 @@
         },
         "resource_utilization_poll_disable": false,
         "resource_utilization_poll_interval": 10,
+        "sflow": "global",
         "subsystems": {
             "system/base": {
                 "asset_tag_number": "OpenSwitch asset tag",
@@ -720,6 +721,11 @@
                 ],
                 "type": "user"
             }
+        }
+    },
+    "sFlow": {
+        "global": {
+            "name": "global"
         }
     }
 }
