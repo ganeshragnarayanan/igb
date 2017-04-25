@@ -46,6 +46,13 @@
             "vlan_mode": "access",
             "vlan_tag": "DEFAULT_VLAN_1"
         },
+        "1%2F1%2F2": {
+            "interfaces": [
+                "1%2F1%2F2"
+            ],
+            "ip4_address": "10.0.1.2/24",
+            "name": "1/1/2"
+        },
         "bridge_normal": {
             "interfaces": [
                 "bridge_normal"
@@ -727,6 +734,7 @@
             "vrf_default": {
                 "name": "vrf_default",
                 "ports": [
+                    "1%2F1%2F2",
                     "vlan2"
                 ],
                 "type": "user"
