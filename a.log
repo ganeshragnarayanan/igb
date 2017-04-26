@@ -47,6 +47,12 @@
                 "admin": "up"
             }
         },
+        "1%2F1%2F18": {
+            "name": "1/1/18",
+            "user_config": {
+                "admin": "up"
+            }
+        },
         "vlan2": {
             "name": "vlan2",
             "type": "internal",
@@ -85,6 +91,13 @@
                 "1%2F1%2F16"
             ],
             "name": "1/1/16"
+        },
+        "1%2F1%2F18": {
+            "admin": "up",
+            "interfaces": [
+                "1%2F1%2F18"
+            ],
+            "name": "1/1/18"
         },
         "1%2F1%2F2": {
             "interfaces": [
@@ -783,6 +796,7 @@
             "vrf_default": {
                 "name": "vrf_default",
                 "ports": [
+                    "1%2F1%2F18",
                     "1%2F1%2F2",
                     "1%2F1%2F15",
                     "1%2F1%2F10",
