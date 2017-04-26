@@ -1,0 +1,823 @@
+{
+    "AAA_Server_Group": {
+        "local": {
+            "group_name": "local",
+            "group_type": "local"
+        },
+        "none": {
+            "group_name": "none",
+            "group_type": "none"
+        },
+        "radius": {
+            "group_name": "radius",
+            "group_type": "radius"
+        },
+        "tacacs_plus": {
+            "group_name": "tacacs_plus",
+            "group_type": "tacacs_plus"
+        }
+    },
+    "AAA_Server_Group_Prio": {
+        "default": {
+            "authentication_group_prios": {
+                "1": "local"
+            },
+            "authorization_group_prios": {
+                "1": "none"
+            },
+            "session_type": "default"
+        }
+    },
+    "Interface": {
+        "1%2F1%2F10": {
+            "name": "1/1/10",
+            "user_config": {
+                "admin": "up"
+            }
+        },
+        "1%2F1%2F15": {
+            "name": "1/1/15",
+            "user_config": {
+                "admin": "up"
+            }
+        },
+        "1%2F1%2F16": {
+            "name": "1/1/16",
+            "user_config": {
+                "admin": "up"
+            }
+        },
+        "1%2F1%2F18": {
+            "name": "1/1/18",
+            "user_config": {
+                "admin": "up"
+            }
+        },
+        "vlan2": {
+            "name": "vlan2",
+            "type": "internal",
+            "user_config": {
+                "admin": "up"
+            }
+        }
+    },
+    "Port": {
+        "1%2F1%2F1": {
+            "interfaces": [
+                "1%2F1%2F1"
+            ],
+            "name": "1/1/1",
+            "vlan_mode": "access",
+            "vlan_tag": "DEFAULT_VLAN_1"
+        },
+        "1%2F1%2F10": {
+            "admin": "up",
+            "interfaces": [
+                "1%2F1%2F10"
+            ],
+            "ip4_address": "19.0.0.1/24",
+            "name": "1/1/10"
+        },
+        "1%2F1%2F15": {
+            "admin": "up",
+            "interfaces": [
+                "1%2F1%2F15"
+            ],
+            "name": "1/1/15"
+        },
+        "1%2F1%2F16": {
+            "admin": "up",
+            "interfaces": [
+                "1%2F1%2F16"
+            ],
+            "name": "1/1/16"
+        },
+        "1%2F1%2F18": {
+            "admin": "up",
+            "interfaces": [
+                "1%2F1%2F18"
+            ],
+            "name": "1/1/18"
+        },
+        "1%2F1%2F2": {
+            "interfaces": [
+                "1%2F1%2F2"
+            ],
+            "ip4_address": "10.0.1.2/24",
+            "name": "1/1/2"
+        },
+        "1%2F1%2F5": {
+            "interfaces": [
+                "1%2F1%2F5"
+            ],
+            "name": "1/1/5",
+            "vlan_mode": "access",
+            "vlan_tag": "DEFAULT_VLAN_1"
+        },
+        "bridge_normal": {
+            "interfaces": [
+                "bridge_normal"
+            ],
+            "name": "bridge_normal"
+        },
+        "vlan2": {
+            "admin": "up",
+            "interfaces": [
+                "vlan2"
+            ],
+            "name": "vlan2",
+            "vlan_tag": "VLAN2"
+        }
+    },
+    "Q_Profile": {
+        "default": {
+            "name": "default",
+            "q_profile_entries": {
+                "0": {
+                    "description": "Scavenger_and_backup_data",
+                    "local_priorities": [
+                        0
+                    ]
+                },
+                "1": {
+                    "local_priorities": [
+                        1
+                    ]
+                },
+                "2": {
+                    "local_priorities": [
+                        2
+                    ]
+                },
+                "3": {
+                    "local_priorities": [
+                        3
+                    ]
+                },
+                "4": {
+                    "local_priorities": [
+                        4
+                    ]
+                },
+                "5": {
+                    "local_priorities": [
+                        5
+                    ]
+                },
+                "6": {
+                    "local_priorities": [
+                        6
+                    ]
+                },
+                "7": {
+                    "local_priorities": [
+                        7
+                    ]
+                }
+            }
+        },
+        "factory-default": {
+            "name": "factory-default",
+            "q_profile_entries": {
+                "0": {
+                    "description": "Scavenger_and_backup_data",
+                    "local_priorities": [
+                        0
+                    ]
+                },
+                "1": {
+                    "local_priorities": [
+                        1
+                    ]
+                },
+                "2": {
+                    "local_priorities": [
+                        2
+                    ]
+                },
+                "3": {
+                    "local_priorities": [
+                        3
+                    ]
+                },
+                "4": {
+                    "local_priorities": [
+                        4
+                    ]
+                },
+                "5": {
+                    "local_priorities": [
+                        5
+                    ]
+                },
+                "6": {
+                    "local_priorities": [
+                        6
+                    ]
+                },
+                "7": {
+                    "local_priorities": [
+                        7
+                    ]
+                }
+            }
+        }
+    },
+    "QoS": {
+        "default": {
+            "name": "default",
+            "queues": {
+                "0": {
+                    "algorithm": "dwrr",
+                    "weight": 1
+                },
+                "1": {
+                    "algorithm": "dwrr",
+                    "weight": 2
+                },
+                "2": {
+                    "algorithm": "dwrr",
+                    "weight": 3
+                },
+                "3": {
+                    "algorithm": "dwrr",
+                    "weight": 4
+                },
+                "4": {
+                    "algorithm": "dwrr",
+                    "weight": 5
+                },
+                "5": {
+                    "algorithm": "dwrr",
+                    "weight": 6
+                },
+                "6": {
+                    "algorithm": "dwrr",
+                    "weight": 7
+                },
+                "7": {
+                    "algorithm": "strict"
+                }
+            }
+        },
+        "factory-default": {
+            "name": "factory-default",
+            "queues": {
+                "0": {
+                    "algorithm": "dwrr",
+                    "weight": 1
+                },
+                "1": {
+                    "algorithm": "dwrr",
+                    "weight": 2
+                },
+                "2": {
+                    "algorithm": "dwrr",
+                    "weight": 3
+                },
+                "3": {
+                    "algorithm": "dwrr",
+                    "weight": 4
+                },
+                "4": {
+                    "algorithm": "dwrr",
+                    "weight": 5
+                },
+                "5": {
+                    "algorithm": "dwrr",
+                    "weight": 6
+                },
+                "6": {
+                    "algorithm": "dwrr",
+                    "weight": 7
+                },
+                "7": {
+                    "algorithm": "strict"
+                }
+            }
+        }
+    },
+    "System": {
+        "aaa": {
+            "fail_through": "false",
+            "radius_auth": "pap",
+            "radius_passkey": "testing123-1",
+            "radius_retries": "1",
+            "radius_timeout": "5",
+            "ssh_passkeyauthentication_enable": "true",
+            "ssh_publickeyauthentication_enable": "true",
+            "tacacs_auth": "pap",
+            "tacacs_passkey": "testing123-1",
+            "tacacs_timeout": "5"
+        },
+        "bridges": {
+            "bridge_normal": {
+                "STP_Instance": {
+                    "mstp/0": {
+                        "forward_delay": 15,
+                        "hello_time": 2,
+                        "instance_type": "mstp",
+                        "max_age": 20,
+                        "priority": 8,
+                        "stp_instance_id": 0,
+                        "vlans": [
+                            "DEFAULT_VLAN_1",
+                            "VLAN110",
+                            "VLAN2",
+                            "VLAN20"
+                        ]
+                    }
+                },
+                "name": "bridge_normal",
+                "ports": [
+                    "bridge_normal",
+                    "1%2F1%2F1",
+                    "vlan2",
+                    "1%2F1%2F5"
+                ],
+                "stp_config": {
+                    "forward_delay": "15",
+                    "hello_time": "2",
+                    "max_age": "20",
+                    "max_hop_count": "20",
+                    "mstp_config_name": "70:72:cf:3c:d0:55",
+                    "mstp_config_revision": "0",
+                    "priority": "8",
+                    "stp_enable": "false",
+                    "stp_mode": "mstp",
+                    "tx_hold_count": "6"
+                },
+                "vlans": {
+                    "DEFAULT_VLAN_1": {
+                        "admin": "up",
+                        "id": 1,
+                        "name": "DEFAULT_VLAN_1",
+                        "type": "static"
+                    },
+                    "VLAN110": {
+                        "admin": "down",
+                        "id": 110,
+                        "name": "VLAN110",
+                        "type": "static"
+                    },
+                    "VLAN2": {
+                        "admin": "down",
+                        "id": 2,
+                        "name": "VLAN2",
+                        "type": "static"
+                    },
+                    "VLAN20": {
+                        "admin": "down",
+                        "id": 20,
+                        "name": "VLAN20",
+                        "type": "static"
+                    }
+                }
+            }
+        },
+        "mgmt_intf": {
+            "name": "eth0"
+        },
+        "other_config": {
+            "lldp_enable": "true"
+        },
+        "q_profile": "default",
+        "qos": "default",
+        "qos_config": {
+            "qos_trust": "none"
+        },
+        "qos_cos_map_entries": {
+            "0": {
+                "code_point": 0,
+                "color": "green",
+                "description": "Best_Effort",
+                "local_priority": 1
+            },
+            "1": {
+                "code_point": 1,
+                "color": "green",
+                "description": "Background",
+                "local_priority": 0
+            },
+            "2": {
+                "code_point": 2,
+                "color": "green",
+                "description": "Excellent_Effort",
+                "local_priority": 2
+            },
+            "3": {
+                "code_point": 3,
+                "color": "green",
+                "description": "Critical_Applications",
+                "local_priority": 3
+            },
+            "4": {
+                "code_point": 4,
+                "color": "green",
+                "description": "Video",
+                "local_priority": 4
+            },
+            "5": {
+                "code_point": 5,
+                "color": "green",
+                "description": "Voice",
+                "local_priority": 5
+            },
+            "6": {
+                "code_point": 6,
+                "color": "green",
+                "description": "Internetwork_Control",
+                "local_priority": 6
+            },
+            "7": {
+                "code_point": 7,
+                "color": "green",
+                "description": "Network_Control",
+                "local_priority": 7
+            }
+        },
+        "qos_dscp_map_entries": {
+            "0": {
+                "code_point": 0,
+                "color": "green",
+                "description": "CS0",
+                "local_priority": 1
+            },
+            "1": {
+                "code_point": 1,
+                "color": "green",
+                "local_priority": 1
+            },
+            "10": {
+                "code_point": 10,
+                "color": "green",
+                "description": "AF11",
+                "local_priority": 0
+            },
+            "11": {
+                "code_point": 11,
+                "color": "green",
+                "local_priority": 0
+            },
+            "12": {
+                "code_point": 12,
+                "color": "yellow",
+                "description": "AF12",
+                "local_priority": 0
+            },
+            "13": {
+                "code_point": 13,
+                "color": "green",
+                "local_priority": 0
+            },
+            "14": {
+                "code_point": 14,
+                "color": "red",
+                "description": "AF13",
+                "local_priority": 0
+            },
+            "15": {
+                "code_point": 15,
+                "color": "green",
+                "local_priority": 0
+            },
+            "16": {
+                "code_point": 16,
+                "color": "green",
+                "description": "CS2",
+                "local_priority": 2
+            },
+            "17": {
+                "code_point": 17,
+                "color": "green",
+                "local_priority": 2
+            },
+            "18": {
+                "code_point": 18,
+                "color": "green",
+                "description": "AF21",
+                "local_priority": 2
+            },
+            "19": {
+                "code_point": 19,
+                "color": "green",
+                "local_priority": 2
+            },
+            "2": {
+                "code_point": 2,
+                "color": "green",
+                "local_priority": 1
+            },
+            "20": {
+                "code_point": 20,
+                "color": "yellow",
+                "description": "AF22",
+                "local_priority": 2
+            },
+            "21": {
+                "code_point": 21,
+                "color": "green",
+                "local_priority": 2
+            },
+            "22": {
+                "code_point": 22,
+                "color": "red",
+                "description": "AF23",
+                "local_priority": 2
+            },
+            "23": {
+                "code_point": 23,
+                "color": "green",
+                "local_priority": 2
+            },
+            "24": {
+                "code_point": 24,
+                "color": "green",
+                "description": "CS3",
+                "local_priority": 3
+            },
+            "25": {
+                "code_point": 25,
+                "color": "green",
+                "local_priority": 3
+            },
+            "26": {
+                "code_point": 26,
+                "color": "green",
+                "description": "AF31",
+                "local_priority": 3
+            },
+            "27": {
+                "code_point": 27,
+                "color": "green",
+                "local_priority": 3
+            },
+            "28": {
+                "code_point": 28,
+                "color": "yellow",
+                "description": "AF32",
+                "local_priority": 3
+            },
+            "29": {
+                "code_point": 29,
+                "color": "green",
+                "local_priority": 3
+            },
+            "3": {
+                "code_point": 3,
+                "color": "green",
+                "local_priority": 1
+            },
+            "30": {
+                "code_point": 30,
+                "color": "red",
+                "description": "AF33",
+                "local_priority": 3
+            },
+            "31": {
+                "code_point": 31,
+                "color": "green",
+                "local_priority": 3
+            },
+            "32": {
+                "code_point": 32,
+                "color": "green",
+                "description": "CS4",
+                "local_priority": 4
+            },
+            "33": {
+                "code_point": 33,
+                "color": "green",
+                "local_priority": 4
+            },
+            "34": {
+                "code_point": 34,
+                "color": "green",
+                "description": "AF41",
+                "local_priority": 4
+            },
+            "35": {
+                "code_point": 35,
+                "color": "green",
+                "local_priority": 4
+            },
+            "36": {
+                "code_point": 36,
+                "color": "yellow",
+                "description": "AF42",
+                "local_priority": 4
+            },
+            "37": {
+                "code_point": 37,
+                "color": "green",
+                "local_priority": 4
+            },
+            "38": {
+                "code_point": 38,
+                "color": "red",
+                "description": "AF43",
+                "local_priority": 4
+            },
+            "39": {
+                "code_point": 39,
+                "color": "green",
+                "local_priority": 4
+            },
+            "4": {
+                "code_point": 4,
+                "color": "green",
+                "local_priority": 1
+            },
+            "40": {
+                "code_point": 40,
+                "color": "green",
+                "description": "CS5",
+                "local_priority": 5
+            },
+            "41": {
+                "code_point": 41,
+                "color": "green",
+                "local_priority": 5
+            },
+            "42": {
+                "code_point": 42,
+                "color": "green",
+                "local_priority": 5
+            },
+            "43": {
+                "code_point": 43,
+                "color": "green",
+                "local_priority": 5
+            },
+            "44": {
+                "code_point": 44,
+                "color": "green",
+                "local_priority": 5
+            },
+            "45": {
+                "code_point": 45,
+                "color": "green",
+                "local_priority": 5
+            },
+            "46": {
+                "code_point": 46,
+                "color": "green",
+                "description": "EF",
+                "local_priority": 5
+            },
+            "47": {
+                "code_point": 47,
+                "color": "green",
+                "local_priority": 5
+            },
+            "48": {
+                "code_point": 48,
+                "color": "green",
+                "description": "CS6",
+                "local_priority": 6
+            },
+            "49": {
+                "code_point": 49,
+                "color": "green",
+                "local_priority": 6
+            },
+            "5": {
+                "code_point": 5,
+                "color": "green",
+                "local_priority": 1
+            },
+            "50": {
+                "code_point": 50,
+                "color": "green",
+                "local_priority": 6
+            },
+            "51": {
+                "code_point": 51,
+                "color": "green",
+                "local_priority": 6
+            },
+            "52": {
+                "code_point": 52,
+                "color": "green",
+                "local_priority": 6
+            },
+            "53": {
+                "code_point": 53,
+                "color": "green",
+                "local_priority": 6
+            },
+            "54": {
+                "code_point": 54,
+                "color": "green",
+                "local_priority": 6
+            },
+            "55": {
+                "code_point": 55,
+                "color": "green",
+                "local_priority": 6
+            },
+            "56": {
+                "code_point": 56,
+                "color": "green",
+                "description": "CS7",
+                "local_priority": 7
+            },
+            "57": {
+                "code_point": 57,
+                "color": "green",
+                "local_priority": 7
+            },
+            "58": {
+                "code_point": 58,
+                "color": "green",
+                "local_priority": 7
+            },
+            "59": {
+                "code_point": 59,
+                "color": "green",
+                "local_priority": 7
+            },
+            "6": {
+                "code_point": 6,
+                "color": "green",
+                "local_priority": 1
+            },
+            "60": {
+                "code_point": 60,
+                "color": "green",
+                "local_priority": 7
+            },
+            "61": {
+                "code_point": 61,
+                "color": "green",
+                "local_priority": 7
+            },
+            "62": {
+                "code_point": 62,
+                "color": "green",
+                "local_priority": 7
+            },
+            "63": {
+                "code_point": 63,
+                "color": "green",
+                "local_priority": 7
+            },
+            "7": {
+                "code_point": 7,
+                "color": "green",
+                "local_priority": 1
+            },
+            "8": {
+                "code_point": 8,
+                "color": "green",
+                "description": "CS1",
+                "local_priority": 0
+            },
+            "9": {
+                "code_point": 9,
+                "color": "green",
+                "local_priority": 0
+            }
+        },
+        "resource_utilization_poll_disable": false,
+        "resource_utilization_poll_interval": 10,
+        "sflow": "global",
+        "subsystems": {
+            "system/base": {
+                "asset_tag_number": "OpenSwitch asset tag",
+                "leds": {
+                    "locator": {
+                        "id": "locator",
+                        "locator": true,
+                        "state": "on"
+                    }
+                },
+                "name": "base",
+                "part_number_cfg": "OPSX8664",
+                "type": "system"
+            }
+        },
+        "timezone": "UTC",
+        "unicast_gr_disabled": false,
+        "vrfs": {
+            "vrf_default": {
+                "name": "vrf_default",
+                "ports": [
+                    "1%2F1%2F18",
+                    "1%2F1%2F2",
+                    "1%2F1%2F15",
+                    "1%2F1%2F10",
+                    "1%2F1%2F16",
+                    "vlan2"
+                ],
+                "type": "user"
+            }
+        }
+    },
+    "sFlow": {
+        "global": {
+            "name": "global",
+            "sampling": 101
+        }
+    }
+}
