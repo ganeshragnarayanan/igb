@@ -831,7 +831,7 @@
     "sFlow": {
         "global": {
             "name": "global",
-            "sampling": 777
+            "sampling": 198
         }
     }
 }
